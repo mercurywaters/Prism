@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3428ACF1A05895100174D4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428ACE1A05895100174D4E /* AppDelegate.swift */; };
+		C3428AD11A05895100174D4E /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428AD01A05895100174D4E /* GameView.swift */; };
+		C3428AD31A05895100174D4E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428AD21A05895100174D4E /* GameViewController.swift */; };
+		C3428AD51A05895100174D4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD41A05895100174D4E /* art.scnassets */; };
+		C3428AD71A05895100174D4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD61A05895100174D4E /* Images.xcassets */; };
+		C3428ADA1A05895100174D4E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD81A05895100174D4E /* MainMenu.xib */; };
+		C3428AE61A05895100174D4E /* PrismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428AE51A05895100174D4E /* PrismTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3428AE01A05895100174D4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3428AC11A05895000174D4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3428AC81A05895100174D4E;
+			remoteInfo = Prism;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3428AC91A05895100174D4E /* Prism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prism.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3428ACD1A05895100174D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3428ACE1A05895100174D4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3428AD01A05895100174D4E /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		C3428AD21A05895100174D4E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		C3428AD41A05895100174D4E /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		C3428AD61A05895100174D4E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C3428AD91A05895100174D4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C3428ADF1A05895100174D4E /* PrismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3428AE41A05895100174D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3428AE51A05895100174D4E /* PrismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3428AC61A05895100174D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3428ADC1A05895100174D4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3428AC01A05895000174D4E = {
+			isa = PBXGroup;
+			children = (
+				C3428ACB1A05895100174D4E /* Prism */,
+				C3428AE21A05895100174D4E /* PrismTests */,
+				C3428ACA1A05895100174D4E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3428ACA1A05895100174D4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3428AC91A05895100174D4E /* Prism.app */,
+				C3428ADF1A05895100174D4E /* PrismTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3428ACB1A05895100174D4E /* Prism */ = {
+			isa = PBXGroup;
+			children = (
+				C3428ACE1A05895100174D4E /* AppDelegate.swift */,
+				C3428AD01A05895100174D4E /* GameView.swift */,
+				C3428AD21A05895100174D4E /* GameViewController.swift */,
+				C3428AD41A05895100174D4E /* art.scnassets */,
+				C3428AD61A05895100174D4E /* Images.xcassets */,
+				C3428AD81A05895100174D4E /* MainMenu.xib */,
+				C3428ACC1A05895100174D4E /* Supporting Files */,
+			);
+			path = Prism;
+			sourceTree = "<group>";
+		};
+		C3428ACC1A05895100174D4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3428ACD1A05895100174D4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3428AE21A05895100174D4E /* PrismTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3428AE51A05895100174D4E /* PrismTests.swift */,
+				C3428AE31A05895100174D4E /* Supporting Files */,
+			);
+			path = PrismTests;
+			sourceTree = "<group>";
+		};
+		C3428AE31A05895100174D4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3428AE41A05895100174D4E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3428AC81A05895100174D4E /* Prism */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3428AE91A05895100174D4E /* Build configuration list for PBXNativeTarget "Prism" */;
+			buildPhases = (
+				C3428AC51A05895100174D4E /* Sources */,
+				C3428AC61A05895100174D4E /* Frameworks */,
+				C3428AC71A05895100174D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prism;
+			productName = Prism;
+			productReference = C3428AC91A05895100174D4E /* Prism.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3428ADE1A05895100174D4E /* PrismTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3428AEC1A05895100174D4E /* Build configuration list for PBXNativeTarget "PrismTests" */;
+			buildPhases = (
+				C3428ADB1A05895100174D4E /* Sources */,
+				C3428ADC1A05895100174D4E /* Frameworks */,
+				C3428ADD1A05895100174D4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3428AE11A05895100174D4E /* PBXTargetDependency */,
+			);
+			name = PrismTests;
+			productName = PrismTests;
+			productReference = C3428ADF1A05895100174D4E /* PrismTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3428AC11A05895000174D4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Faheem Inayat";
+				TargetAttributes = {
+					C3428AC81A05895100174D4E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C3428ADE1A05895100174D4E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = C3428AC81A05895100174D4E;
+					};
+				};
+			};
+			buildConfigurationList = C3428AC41A05895000174D4E /* Build configuration list for PBXProject "Prism" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3428AC01A05895000174D4E;
+			productRefGroup = C3428ACA1A05895100174D4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3428AC81A05895100174D4E /* Prism */,
+				C3428ADE1A05895100174D4E /* PrismTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3428AC71A05895100174D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3428AD51A05895100174D4E /* art.scnassets in Resources */,
+				C3428AD71A05895100174D4E /* Images.xcassets in Resources */,
+				C3428ADA1A05895100174D4E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3428ADD1A05895100174D4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3428AC51A05895100174D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3428AD11A05895100174D4E /* GameView.swift in Sources */,
+				C3428AD31A05895100174D4E /* GameViewController.swift in Sources */,
+				C3428ACF1A05895100174D4E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3428ADB1A05895100174D4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3428AE61A05895100174D4E /* PrismTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3428AE11A05895100174D4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3428AC81A05895100174D4E /* Prism */;
+			targetProxy = C3428AE01A05895100174D4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3428AD81A05895100174D4E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3428AD91A05895100174D4E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3428AE71A05895100174D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3428AE81A05895100174D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C3428AEA1A05895100174D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Prism/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C3428AEB1A05895100174D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Prism/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C3428AED1A05895100174D4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrismTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prism.app/Contents/MacOS/Prism";
+			};
+			name = Debug;
+		};
+		C3428AEE1A05895100174D4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrismTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prism.app/Contents/MacOS/Prism";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3428AC41A05895000174D4E /* Build configuration list for PBXProject "Prism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3428AE71A05895100174D4E /* Debug */,
+				C3428AE81A05895100174D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3428AE91A05895100174D4E /* Build configuration list for PBXNativeTarget "Prism" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3428AEA1A05895100174D4E /* Debug */,
+				C3428AEB1A05895100174D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3428AEC1A05895100174D4E /* Build configuration list for PBXNativeTarget "PrismTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3428AED1A05895100174D4E /* Debug */,
+				C3428AEE1A05895100174D4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3428AC11A05895000174D4E /* Project object */;
+}
