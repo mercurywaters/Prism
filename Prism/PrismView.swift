@@ -1,5 +1,5 @@
 //
-//  GameView.swift
+//  PrismView.swift
 //  Prism
 //
 //  Created by Faheem Chaudhary on 11/1/14.
@@ -8,16 +8,19 @@
 
 import SceneKit
 
-class GameView: SCNView {
+class PrismView: SCNView {
     
     override func mouseDown(theEvent: NSEvent) {
         /* Called when a mouse click occurs */
         
         // check what nodes are clicked
         let p = self.convertPoint(theEvent.locationInWindow, fromView: nil)
+        
         if let hitResults = self.hitTest(p, options: nil) {
+    
             // check that we clicked on at least one object
             if hitResults.count > 0 {
+            
                 // retrieved the first clicked object
                 let result: AnyObject = hitResults[0]
                 
@@ -30,6 +33,7 @@ class GameView: SCNView {
                 
                 // on completion - unhighlight
                 SCNTransaction.setCompletionBlock() {
+                
                     SCNTransaction.begin()
                     SCNTransaction.setAnimationDuration(0.5)
                     
@@ -46,5 +50,5 @@ class GameView: SCNView {
         
         super.mouseDown(theEvent)
     }
-
+    
 }

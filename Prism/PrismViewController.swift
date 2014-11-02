@@ -1,5 +1,5 @@
 //
-//  GameViewController.swift
+//  PrismViewController.swift
 //  Prism
 //
 //  Created by Faheem Chaudhary on 11/1/14.
@@ -9,9 +9,9 @@
 import SceneKit
 import QuartzCore
 
-class GameViewController: NSViewController {
+class PrismViewController: NSViewController {
     
-    @IBOutlet weak var gameView: GameView!
+    @IBOutlet weak var gameView: PrismView!
     
     override func awakeFromNib(){
         // create a new scene
@@ -43,12 +43,12 @@ class GameViewController: NSViewController {
         let ship = scene.rootNode.childNodeWithName("ship", recursively: true)!
         
         // animate the 3d object
-        let animation = CABasicAnimation(keyPath: "rotation")
-        animation.toValue = NSValue(SCNVector4: SCNVector4(x: CGFloat(0), y: CGFloat(1), z: CGFloat(0), w: CGFloat(M_PI)*2))
-        animation.duration = 3
-        animation.repeatCount = MAXFLOAT //repeat forever
-        ship.addAnimation(animation, forKey: nil)
-
+//        let animation = CABasicAnimation(keyPath: "rotation")
+//        animation.toValue = NSValue(SCNVector4: SCNVector4(x: CGFloat(0), y: CGFloat(1), z: CGFloat(0), w: CGFloat(M_PI)*2))
+//        animation.duration = 3
+//        animation.repeatCount = MAXFLOAT //repeat forever
+//        ship.addAnimation(animation, forKey: nil)
+        
         // set the scene to the view
         self.gameView!.scene = scene
         
@@ -61,5 +61,5 @@ class GameViewController: NSViewController {
         // configure the view
         self.gameView!.backgroundColor = NSColor.blackColor()
     }
-
+    
 }
