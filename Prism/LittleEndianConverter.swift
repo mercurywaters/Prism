@@ -141,6 +141,13 @@ struct LittleEndianConverter {
             break;
         
         case 4:
+            returnValue = convertToBigEndian (
+                srcBuffer: srcBuffer,
+                destBuffer: &destBuffer,
+                srcLength: srcLength,
+                destOffset: destOffset,
+                destLength: destLength,
+                mask: mask );
             break;
         
         default:

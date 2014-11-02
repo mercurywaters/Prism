@@ -12,6 +12,7 @@ import SceneKit
 class StlSceneReader {
 
     func read (from: NSURL) -> (sceneNode: SCNNode, error: NSError)? {
+
         
         return nil;
     }

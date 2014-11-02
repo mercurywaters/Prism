@@ -10,16 +10,6 @@ import Foundation
 
 protocol StlParser {
 
-    var numOfObjects: Int { get }
-    var numOfFacets: [Int] { get }
-    var objectNames: [String] { get }
-    
+    func readTriangles ( #from: NSURL ) -> ( triangleCount: Int, triangles: [StlTriangle], error: NSError? )
 
-    init ()
-    init ( strictParsing: Bool )
-    
-    func read ( from: NSURL ) -> ( error: NSError?, parsingMessages: [String]? )
-    func close () -> ( NSError? )
-
-    func getNextFacets (upTo: Int) -> ( vertices: [StlVertex], actualCount: Int, endOfFacets: Bool, error: NSError? )
 }

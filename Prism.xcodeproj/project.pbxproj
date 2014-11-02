@@ -21,14 +21,13 @@
 		C3428B271A05A8DE00174D4E /* StlReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B251A05A8DE00174D4E /* StlReader.swift */; };
 		C3428B291A05B33A00174D4E /* StlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B281A05B33A00174D4E /* StlParser.swift */; };
 		C3428B2A1A05B33A00174D4E /* StlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B281A05B33A00174D4E /* StlParser.swift */; };
-		C3428B2D1A05BB9700174D4E /* StlVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2C1A05BB9700174D4E /* StlVertex.swift */; };
-		C3428B2E1A05BB9700174D4E /* StlVertex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2C1A05BB9700174D4E /* StlVertex.swift */; };
+		C3428B2D1A05BB9700174D4E /* StlTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2C1A05BB9700174D4E /* StlTriangle.swift */; };
+		C3428B2E1A05BB9700174D4E /* StlTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2C1A05BB9700174D4E /* StlTriangle.swift */; };
 		C3428B301A05BDBA00174D4E /* StlBinaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2F1A05BDBA00174D4E /* StlBinaryParser.swift */; };
 		C3428B311A05BDBA00174D4E /* StlBinaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2F1A05BDBA00174D4E /* StlBinaryParser.swift */; };
-		C3428B331A05BF0000174D4E /* StlObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B321A05BF0000174D4E /* StlObject.swift */; };
-		C3428B341A05BF0000174D4E /* StlObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B321A05BF0000174D4E /* StlObject.swift */; };
 		C3428B361A05C19C00174D4E /* LittleEndianConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */; };
 		C3428B371A05C19C00174D4E /* LittleEndianConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */; };
+		C3B28BA91A06C6BE009ADEA6 /* StlBinaryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B28BA81A06C6BE009ADEA6 /* StlBinaryParserTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +54,10 @@
 		C3428AF11A058C4A00174D4E /* PrismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrismViewController.swift; sourceTree = "<group>"; };
 		C3428B251A05A8DE00174D4E /* StlReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlReader.swift; sourceTree = "<group>"; };
 		C3428B281A05B33A00174D4E /* StlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlParser.swift; sourceTree = "<group>"; };
-		C3428B2C1A05BB9700174D4E /* StlVertex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlVertex.swift; sourceTree = "<group>"; };
+		C3428B2C1A05BB9700174D4E /* StlTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlTriangle.swift; sourceTree = "<group>"; };
 		C3428B2F1A05BDBA00174D4E /* StlBinaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlBinaryParser.swift; sourceTree = "<group>"; };
-		C3428B321A05BF0000174D4E /* StlObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlObject.swift; sourceTree = "<group>"; };
 		C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleEndianConverter.swift; sourceTree = "<group>"; };
+		C3B28BA81A06C6BE009ADEA6 /* StlBinaryParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlBinaryParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C3428AE51A05895100174D4E /* PrismTests.swift */,
+				C3B28BA81A06C6BE009ADEA6 /* StlBinaryParserTests.swift */,
 				C3428AE31A05895100174D4E /* Supporting Files */,
 			);
 			path = PrismTests;
@@ -142,8 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */,
-				C3428B321A05BF0000174D4E /* StlObject.swift */,
-				C3428B2C1A05BB9700174D4E /* StlVertex.swift */,
+				C3428B2C1A05BB9700174D4E /* StlTriangle.swift */,
 				C3428B281A05B33A00174D4E /* StlParser.swift */,
 				C3428B2F1A05BDBA00174D4E /* StlBinaryParser.swift */,
 			);
@@ -251,10 +250,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3428AF01A058A6500174D4E /* PrismView.swift in Sources */,
-				C3428B2D1A05BB9700174D4E /* StlVertex.swift in Sources */,
+				C3428B2D1A05BB9700174D4E /* StlTriangle.swift in Sources */,
 				C3428B301A05BDBA00174D4E /* StlBinaryParser.swift in Sources */,
 				C3428B261A05A8DE00174D4E /* StlReader.swift in Sources */,
-				C3428B331A05BF0000174D4E /* StlObject.swift in Sources */,
 				C3428AF21A058C4A00174D4E /* PrismViewController.swift in Sources */,
 				C3428B361A05C19C00174D4E /* LittleEndianConverter.swift in Sources */,
 				C3428B291A05B33A00174D4E /* StlParser.swift in Sources */,
@@ -268,10 +266,10 @@
 			files = (
 				C3428B271A05A8DE00174D4E /* StlReader.swift in Sources */,
 				C3428B371A05C19C00174D4E /* LittleEndianConverter.swift in Sources */,
-				C3428B2E1A05BB9700174D4E /* StlVertex.swift in Sources */,
+				C3428B2E1A05BB9700174D4E /* StlTriangle.swift in Sources */,
+				C3B28BA91A06C6BE009ADEA6 /* StlBinaryParserTests.swift in Sources */,
 				C3428B241A059F7E00174D4E /* PrismAppDelegate.swift in Sources */,
 				C3428B221A059F7600174D4E /* PrismView.swift in Sources */,
-				C3428B341A05BF0000174D4E /* StlObject.swift in Sources */,
 				C3428B231A059F7A00174D4E /* PrismViewController.swift in Sources */,
 				C3428B311A05BDBA00174D4E /* StlBinaryParser.swift in Sources */,
 				C3428B2A1A05B33A00174D4E /* StlParser.swift in Sources */,
