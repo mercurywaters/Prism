@@ -455,6 +455,7 @@
 				C3428AEB1A05895100174D4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3428AEC1A05895100174D4E /* Build configuration list for PBXNativeTarget "PrismTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +464,7 @@
 				C3428AEE1A05895100174D4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

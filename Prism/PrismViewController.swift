@@ -60,6 +60,22 @@ class PrismViewController: NSViewController {
         
         // configure the view
         self.gameView!.backgroundColor = NSColor.blackColor()
+        
+        
     }
-    
+    //Lets one choose a file to send to the STL parser
+    @IBAction func fileOpen(sender: AnyObject) {
+        let myFiledialog:NSOpenPanel = NSOpenPanel()
+        myFiledialog.allowsMultipleSelection = false
+        myFiledialog.canChooseDirectories = false
+        myFiledialog.runModal()
+        
+        var chosenfile = myFiledialog.URL // holds path to selected file, if there is one
+        println(chosenfile?.path)
+        var fileString = String(contentsOfURL: chosenfile!)
+        filePath.placeholderString=chosenfile?.path;
+       
+    }
+    @IBOutlet weak var filePath: NSTextField!
+
 }

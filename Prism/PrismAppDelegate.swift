@@ -19,4 +19,19 @@ class PrismAppDelegate: NSObject, NSApplicationDelegate {
         println ( "Aha ... this is the starting point" );
     }
     
+    func openfiledlg (title: String, message: String) -> String
+    {
+        var myFiledialog: NSOpenPanel = NSOpenPanel()
+        
+        myFiledialog.prompt = "Öffnen"
+        myFiledialog.worksWhenModal = true
+        myFiledialog.allowsMultipleSelection = false
+        myFiledialog.canChooseDirectories = false
+        myFiledialog.resolvesAliases = true
+        myFiledialog.title = title
+        myFiledialog.message = message
+        myFiledialog.runModal()
+        var chosenfile = myFiledialog.URL
+            return ("")
+    }
 }
