@@ -168,7 +168,6 @@
         </menu>
         <customObject id="494" customClass="PrismAppDelegate" customModule="Prism" customModuleProvider="target">
             <connections>
-                <outlet property="fileOpen" destination="kQS-ZE-ahU" id="KBh-Is-x9b"/>
                 <outlet property="window" destination="W6H-FW-cQd" id="inA-aj-PQj"/>
             </connections>
         </customObject>
@@ -176,7 +175,6 @@
         <viewController id="z44-Lp-cgU" customClass="PrismViewController" customModule="Prism" customModuleProvider="target">
             <connections>
                 <outlet property="FilePath" destination="vEa-NE-fuZ" id="ixv-bg-wcn"/>
-                <outlet property="fileOpen" destination="kQS-ZE-ahU" id="DfO-P6-bKw"/>
                 <outlet property="filePath" destination="vEa-NE-fuZ" id="uWl-7r-obE"/>
                 <outlet property="gameView" destination="II5-hI-Xoy" id="0gR-9t-9DK"/>
                 <outlet property="view" destination="Iha-VB-MrG" id="JcX-Uq-BIb"/>
@@ -185,7 +183,7 @@
         <window title="Prism" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="W6H-FW-cQd" userLabel="Prism Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="163" y="199" width="800" height="600"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="JhO-sY-lGW" customClass="NSSplitView">
                 <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -193,7 +191,7 @@
                     <splitView vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iha-VB-MrG">
                         <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
                         <subviews>
-                            <customView fixedFrame="YES" id="jDa-eB-ewM" userLabel="Parameters View">
+                            <customView fixedFrame="YES" id="jDa-eB-ewM" userLabel="Settings View" customClass="SettingsView" customModule="Prism" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="358" height="600"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
@@ -306,16 +304,6 @@
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-ZE-ahU">
-                                        <rect key="frame" x="264" y="532" width="74" height="32"/>
-                                        <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="unU-Vn-NT2">
-                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                            <font key="font" metaFont="system"/>
-                                        </buttonCell>
-                                        <connections>
-                                            <action selector="fileOpen:" target="z44-Lp-cgU" id="Z6B-sl-pH0"/>
-                                        </connections>
-                                    </button>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jgu-6c-ydV">
                                         <rect key="frame" x="150" y="541" width="69" height="17"/>
                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="File Select" id="vAC-fi-M3S">
@@ -383,9 +371,16 @@
                                             <action selector="fileOpen:" target="z44-Lp-cgU" id="4Au-td-ZLe"/>
                                         </connections>
                                     </textField>
+                                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQS-ZE-ahU">
+                                        <rect key="frame" x="264" y="532" width="74" height="32"/>
+                                        <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="unU-Vn-NT2">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
                                 </subviews>
                             </customView>
-                            <customView fixedFrame="YES" id="II5-hI-Xoy" userLabel="Renderer View" customClass="PrismView" customModule="Prism" customModuleProvider="target">
+                            <customView fixedFrame="YES" id="II5-hI-Xoy" customClass="PrismView" customModule="Prism" customModuleProvider="target">
                                 <rect key="frame" x="367" y="0.0" width="433" height="600"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </customView>

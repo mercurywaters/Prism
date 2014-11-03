@@ -16,31 +16,55 @@ class PrismViewController: NSViewController {
     override func awakeFromNib(){
         // create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.dae")!
+//        let scene = SCNScene();
         
-        // create and add a camera to the scene
-        let cameraNode = SCNNode()
-        cameraNode.camera = SCNCamera()
-        scene.rootNode.addChildNode(cameraNode)
+        if (true) {
+            // create and add a camera to the scene
+            let cameraNode = SCNNode()
+            cameraNode.camera = SCNCamera()
+            scene.rootNode.addChildNode(cameraNode)
+            
+            // place the camera
+            cameraNode.position = SCNVector3(x: 0, y: 0, z: 60)
+        }
+
+        if (true) {
+            // create and add a light to the scene
+            let lightNode = SCNNode()
+            lightNode.light = SCNLight()
+            lightNode.light!.type = SCNLightTypeOmni
+            lightNode.position = SCNVector3(x: 10, y: 10, z: 10)
+            scene.rootNode.addChildNode(lightNode)
+        }
         
-        // place the camera
-        cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
+        if (true) {
+            let lightNode = SCNNode()
+            lightNode.light = SCNLight()
+            lightNode.light!.type = SCNLightTypeOmni
+            lightNode.position = SCNVector3(x: -10, y: -10, z: -10)
+            scene.rootNode.addChildNode(lightNode)
+        }
         
-        // create and add a light to the scene
-        let lightNode = SCNNode()
-        lightNode.light = SCNLight()
-        lightNode.light!.type = SCNLightTypeOmni
-        lightNode.position = SCNVector3(x: 0, y: 10, z: 10)
-        scene.rootNode.addChildNode(lightNode)
+        if (true) {
+            // create and add an ambient light to the scene
+            let ambientLightNode = SCNNode()
+            ambientLightNode.light = SCNLight()
+            ambientLightNode.light!.type = SCNLightTypeAmbient
+            ambientLightNode.light!.color = NSColor.darkGrayColor()
+            scene.rootNode.addChildNode(ambientLightNode)
+        }
         
-        // create and add an ambient light to the scene
-        let ambientLightNode = SCNNode()
-        ambientLightNode.light = SCNLight()
-        ambientLightNode.light!.type = SCNLightTypeAmbient
-        ambientLightNode.light!.color = NSColor.darkGrayColor()
-        scene.rootNode.addChildNode(ambientLightNode)
+        if (true) {
+            // create and add an ambient light to the scene
+            let ambientLightNode = SCNNode()
+            ambientLightNode.light = SCNLight()
+            ambientLightNode.light!.type = SCNLightTypeAmbient
+            ambientLightNode.light!.color = NSColor.orangeColor()
+            scene.rootNode.addChildNode(ambientLightNode)
+        }
         
         // retrieve the ship node
-        let ship = scene.rootNode.childNodeWithName("ship", recursively: true)!
+//        let ship = scene.rootNode.childNodeWithName("ship", recursively: true)!
         
         // animate the 3d object
 //        let animation = CABasicAnimation(keyPath: "rotation")
@@ -60,22 +84,43 @@ class PrismViewController: NSViewController {
         
         // configure the view
         self.gameView!.backgroundColor = NSColor.blackColor()
-        
-        
+
+        if (true) {
+            var stlFileNode = SceneLoaderFromStl.loadSceneFromStl ( "Contents/Resources/art.scnassets/CF-TypeI.stl" );
+
+            if ( stlFileNode != nil ) {
+                println ( "Got the scene node, and adding it to view " );
+                stlFileNode?.name = "CF-Card";
+            }
+
+            scene.rootNode.addChildNode ( stlFileNode! );
+        }
+
+        if (true) {
+            var stlFileNode = SceneLoaderFromStl.loadSceneFromStl ( "Contents/Resources/art.scnassets/jaws.stl" );
+            
+            if ( stlFileNode != nil ) {
+                println ( "Got the scene node, and adding it to view " );
+                stlFileNode?.name = "jaws";
+            }
+            
+            scene.rootNode.addChildNode ( stlFileNode! );
+        }
     }
+    
     //Lets one choose a file to send to the STL parser
-    @IBAction func fileOpen(sender: AnyObject) {
-        let myFiledialog:NSOpenPanel = NSOpenPanel()
-        myFiledialog.allowsMultipleSelection = false
-        myFiledialog.canChooseDirectories = false
-        myFiledialog.runModal()
-        
-        var chosenfile = myFiledialog.URL // holds path to selected file, if there is one
-        println(chosenfile?.path)
-        var fileString = String(contentsOfURL: chosenfile!)
-        filePath.placeholderString=chosenfile?.path;
-       
-    }
-    @IBOutlet weak var filePath: NSTextField!
+    //    @IBAction func fileOpen(sender: AnyObject) {
+    //        let myFiledialog:NSOpenPanel = NSOpenPanel()
+    //        myFiledialog.allowsMultipleSelection = false
+    //        myFiledialog.canChooseDirectories = false
+    //        myFiledialog.runModal()
+    //
+    //        var chosenfile = myFiledialog.URL // holds path to selected file, if there is one
+    //        println(chosenfile?.path)
+    //        var fileString = String(contentsOfURL: chosenfile!)
+    //        filePath.placeholderString=chosenfile?.path;
+    //
+    //    }
+    //    @IBOutlet weak var filePath: NSTextField!
 
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C33BC2B41A06F79900F5366F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33BC2B31A06F79900F5366F /* SettingsViewController.swift */; };
+		C33BC2B51A06F79900F5366F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33BC2B31A06F79900F5366F /* SettingsViewController.swift */; };
 		C3428ACF1A05895100174D4E /* PrismAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428ACE1A05895100174D4E /* PrismAppDelegate.swift */; };
 		C3428AD51A05895100174D4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD41A05895100174D4E /* art.scnassets */; };
 		C3428AD71A05895100174D4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD61A05895100174D4E /* Images.xcassets */; };
@@ -17,8 +19,8 @@
 		C3428B221A059F7600174D4E /* PrismView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428AEF1A058A6500174D4E /* PrismView.swift */; };
 		C3428B231A059F7A00174D4E /* PrismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428AF11A058C4A00174D4E /* PrismViewController.swift */; };
 		C3428B241A059F7E00174D4E /* PrismAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428ACE1A05895100174D4E /* PrismAppDelegate.swift */; };
-		C3428B261A05A8DE00174D4E /* StlReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B251A05A8DE00174D4E /* StlReader.swift */; };
-		C3428B271A05A8DE00174D4E /* StlReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B251A05A8DE00174D4E /* StlReader.swift */; };
+		C3428B261A05A8DE00174D4E /* SceneLoaderFromStl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B251A05A8DE00174D4E /* SceneLoaderFromStl.swift */; };
+		C3428B271A05A8DE00174D4E /* SceneLoaderFromStl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B251A05A8DE00174D4E /* SceneLoaderFromStl.swift */; };
 		C3428B291A05B33A00174D4E /* StlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B281A05B33A00174D4E /* StlParser.swift */; };
 		C3428B2A1A05B33A00174D4E /* StlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B281A05B33A00174D4E /* StlParser.swift */; };
 		C3428B2D1A05BB9700174D4E /* StlTriangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2C1A05BB9700174D4E /* StlTriangle.swift */; };
@@ -27,6 +29,8 @@
 		C3428B311A05BDBA00174D4E /* StlBinaryParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B2F1A05BDBA00174D4E /* StlBinaryParser.swift */; };
 		C3428B361A05C19C00174D4E /* LittleEndianConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */; };
 		C3428B371A05C19C00174D4E /* LittleEndianConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */; };
+		C34EFA651A06FA4800098746 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34EFA641A06FA4800098746 /* SettingsView.swift */; };
+		C34EFA661A06FA4800098746 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34EFA641A06FA4800098746 /* SettingsView.swift */; };
 		C3B28BA91A06C6BE009ADEA6 /* StlBinaryParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B28BA81A06C6BE009ADEA6 /* StlBinaryParserTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C33BC2B31A06F79900F5366F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C3428AC91A05895100174D4E /* Prism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3428ACD1A05895100174D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3428ACE1A05895100174D4E /* PrismAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismAppDelegate.swift; sourceTree = "<group>"; };
@@ -52,11 +57,12 @@
 		C3428AE51A05895100174D4E /* PrismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismTests.swift; sourceTree = "<group>"; };
 		C3428AEF1A058A6500174D4E /* PrismView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrismView.swift; sourceTree = "<group>"; };
 		C3428AF11A058C4A00174D4E /* PrismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrismViewController.swift; sourceTree = "<group>"; };
-		C3428B251A05A8DE00174D4E /* StlReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlReader.swift; sourceTree = "<group>"; };
+		C3428B251A05A8DE00174D4E /* SceneLoaderFromStl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneLoaderFromStl.swift; sourceTree = "<group>"; };
 		C3428B281A05B33A00174D4E /* StlParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlParser.swift; sourceTree = "<group>"; };
 		C3428B2C1A05BB9700174D4E /* StlTriangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlTriangle.swift; sourceTree = "<group>"; };
 		C3428B2F1A05BDBA00174D4E /* StlBinaryParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlBinaryParser.swift; sourceTree = "<group>"; };
 		C3428B351A05C19C00174D4E /* LittleEndianConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LittleEndianConverter.swift; sourceTree = "<group>"; };
+		C34EFA641A06FA4800098746 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C3B28BA81A06C6BE009ADEA6 /* StlBinaryParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StlBinaryParserTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +108,9 @@
 				C3428ACE1A05895100174D4E /* PrismAppDelegate.swift */,
 				C3428AEF1A058A6500174D4E /* PrismView.swift */,
 				C3428AF11A058C4A00174D4E /* PrismViewController.swift */,
-				C3428B251A05A8DE00174D4E /* StlReader.swift */,
+				C34EFA641A06FA4800098746 /* SettingsView.swift */,
+				C33BC2B31A06F79900F5366F /* SettingsViewController.swift */,
+				C3428B251A05A8DE00174D4E /* SceneLoaderFromStl.swift */,
 				C3428AD41A05895100174D4E /* art.scnassets */,
 				C3428AD61A05895100174D4E /* Images.xcassets */,
 				C3428AD81A05895100174D4E /* MainMenu.xib */,
@@ -252,11 +260,13 @@
 				C3428AF01A058A6500174D4E /* PrismView.swift in Sources */,
 				C3428B2D1A05BB9700174D4E /* StlTriangle.swift in Sources */,
 				C3428B301A05BDBA00174D4E /* StlBinaryParser.swift in Sources */,
-				C3428B261A05A8DE00174D4E /* StlReader.swift in Sources */,
+				C3428B261A05A8DE00174D4E /* SceneLoaderFromStl.swift in Sources */,
 				C3428AF21A058C4A00174D4E /* PrismViewController.swift in Sources */,
+				C34EFA651A06FA4800098746 /* SettingsView.swift in Sources */,
 				C3428B361A05C19C00174D4E /* LittleEndianConverter.swift in Sources */,
 				C3428B291A05B33A00174D4E /* StlParser.swift in Sources */,
 				C3428ACF1A05895100174D4E /* PrismAppDelegate.swift in Sources */,
+				C33BC2B41A06F79900F5366F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,14 +274,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3428B271A05A8DE00174D4E /* StlReader.swift in Sources */,
+				C3428B271A05A8DE00174D4E /* SceneLoaderFromStl.swift in Sources */,
 				C3428B371A05C19C00174D4E /* LittleEndianConverter.swift in Sources */,
+				C33BC2B51A06F79900F5366F /* SettingsViewController.swift in Sources */,
 				C3428B2E1A05BB9700174D4E /* StlTriangle.swift in Sources */,
 				C3B28BA91A06C6BE009ADEA6 /* StlBinaryParserTests.swift in Sources */,
 				C3428B241A059F7E00174D4E /* PrismAppDelegate.swift in Sources */,
 				C3428B221A059F7600174D4E /* PrismView.swift in Sources */,
 				C3428B231A059F7A00174D4E /* PrismViewController.swift in Sources */,
 				C3428B311A05BDBA00174D4E /* StlBinaryParser.swift in Sources */,
+				C34EFA661A06FA4800098746 /* SettingsView.swift in Sources */,
 				C3428B2A1A05B33A00174D4E /* StlParser.swift in Sources */,
 				C3428AE61A05895100174D4E /* PrismTests.swift in Sources */,
 			);

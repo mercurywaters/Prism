@@ -76,7 +76,7 @@ class StlBinaryParser : StlParser {
                 attBytesData?.getBytes ( &attributeCount );
                 
                 if ( attributeCount > 0 ) {
-                    println ( "attribute Bytes Count is \(attributeCount) and is not ZERO" );
+                    println ( "attribute Bytes Count is \(attributeCount) and is not ZERO ... don't know what to do next !!!!" );
                 }
                 
                 triangles.append ( triangle );
@@ -101,45 +101,9 @@ class StlBinaryParser : StlParser {
         
         var data = fromFile.readDataOfLength( DATA_SIZE_TO_READ_REAL32 );
         
-        var bytes: [Byte] = [Byte](count: 4, repeatedValue: 0);
-        data.getBytes( &bytes );
-        
-        var convertedValue: UInt32 = convertTo32bitBigEndian(
-            byte0: bytes [0],
-            byte1: bytes [1],
-            byte2: bytes [2],
-            byte3: bytes [3]);
-        
-        returnValue = Float32(convertedValue);
+        data.getBytes ( &returnValue );
         
         return returnValue;
     }
-    
-    
-    private let MASK_BYTE_0: UInt32 = 0x000000FF;
-    private let MASK_BYTE_1: UInt32 = 0x0000FF00;
-    private let MASK_BYTE_2: UInt32 = 0x00FF0000;
-    private let MASK_BYTE_3: UInt32 = 0xFF000000;
-    
-    private func convertTo32bitBigEndian (
-        #byte0: Byte,
-         byte1: Byte,
-         byte2: Byte,
-         byte3: Byte
-        ) -> UInt32
-    {
-        
-        var returnValue: UInt32 = 0;
-        
-        var part0 = ( UInt32(byte0) << 00 ) & MASK_BYTE_0;
-        var part1 = ( UInt32(byte1) << 08 ) & MASK_BYTE_1;
-        var part2 = ( UInt32(byte2) << 16 ) & MASK_BYTE_2;
-        var part3 = ( UInt32(byte3) << 24 ) & MASK_BYTE_3;
-        
-        returnValue = ( part0 | part1 | part2 | part3 );
-        
-        return returnValue;
-    }
-    
     
 }
