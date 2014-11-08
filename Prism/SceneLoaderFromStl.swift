@@ -9,13 +9,11 @@ import SceneKit
 
 class SceneLoaderFromStl {
 
-    class func loadSceneFromStl ( filePath: NSString ) -> ( SCNNode? ) {
+    class func loadSceneFromStl ( filePath: NSURL ) -> ( SCNNode? ) {
     
-        var fileUrl: NSURL? = NSURL ( fileURLWithPath: filePath );
-        
         var parser: StlParser = StlBinaryParser();
         
-        var stlFile = parser.readTriangles ( from: fileUrl! );
+        var stlFile = parser.readTriangles ( from: filePath );
 
         var triangleCount = stlFile.triangleCount;
         var triangles = stlFile.triangles;

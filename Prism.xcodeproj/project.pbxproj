@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4327EB4B1A0EDD8000CB4E7D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327EB4A1A0EDD8000CB4E7D /* MenuViewController.swift */; };
+		4327EB4D1A0EDD9400CB4E7D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4327EB4C1A0EDD9400CB4E7D /* SettingsViewController.swift */; };
 		C3428ACF1A05895100174D4E /* PrismAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3428ACE1A05895100174D4E /* PrismAppDelegate.swift */; };
 		C3428AD51A05895100174D4E /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD41A05895100174D4E /* art.scnassets */; };
 		C3428AD71A05895100174D4E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3428AD61A05895100174D4E /* Images.xcassets */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4327EB4A1A0EDD8000CB4E7D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		4327EB4C1A0EDD9400CB4E7D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C3428AC91A05895100174D4E /* Prism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3428ACD1A05895100174D4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3428ACE1A05895100174D4E /* PrismAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismAppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 				C3428AEF1A058A6500174D4E /* PrismView.swift */,
 				C3428AF11A058C4A00174D4E /* PrismViewController.swift */,
 				C3428B251A05A8DE00174D4E /* SceneLoaderFromStl.swift */,
+				4327EB4A1A0EDD8000CB4E7D /* MenuViewController.swift */,
+				4327EB4C1A0EDD9400CB4E7D /* SettingsViewController.swift */,
 				C3428AD41A05895100174D4E /* art.scnassets */,
 				C3428AD61A05895100174D4E /* Images.xcassets */,
 				C3428AD81A05895100174D4E /* MainMenu.xib */,
@@ -252,7 +258,9 @@
 				C3428AF01A058A6500174D4E /* PrismView.swift in Sources */,
 				C3428B2D1A05BB9700174D4E /* StlTriangle.swift in Sources */,
 				C3428B301A05BDBA00174D4E /* StlBinaryParser.swift in Sources */,
+				4327EB4D1A0EDD9400CB4E7D /* SettingsViewController.swift in Sources */,
 				C3428B261A05A8DE00174D4E /* SceneLoaderFromStl.swift in Sources */,
+				4327EB4B1A0EDD8000CB4E7D /* MenuViewController.swift in Sources */,
 				C3428AF21A058C4A00174D4E /* PrismViewController.swift in Sources */,
 				C3428B361A05C19C00174D4E /* LittleEndianConverter.swift in Sources */,
 				C3428B291A05B33A00174D4E /* StlParser.swift in Sources */,

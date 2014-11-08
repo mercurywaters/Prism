@@ -9,12 +9,14 @@ import QuartzCore
 
 class PrismViewController: NSViewController {
     
+    var scene: SCNScene = SCNScene();
+    
     @IBOutlet weak var gameView: PrismView!
     
     override func awakeFromNib(){
         // create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.dae")!
-//        let scene = SCNScene();
+//      scene = SCNScene(named: "art.scnassets/ship.dae")!
+//        scene = SCNScene();
         
         if (true) {
             // create and add a camera to the scene
@@ -73,52 +75,61 @@ class PrismViewController: NSViewController {
         
         // set the scene to the view
         self.gameView!.scene = scene
+    }
+    
+    private final let LOADED_OBJECT_NAME: String = "loadedObject";
+    private final let FILE_PROTOCOL_PREFIX: String = "file://";
+    private final let PROJECT_NAME: String = "Prism";
+    
+    func loadFile ( #fromStl: NSURL ) {
         
-        // allows the user to manipulate the camera
-        self.gameView!.allowsCameraControl = true
+        var stlFileNode = SceneLoaderFromStl.loadSceneFromStl ( fromStl );
         
-        // show statistics such as fps and timing information
-        self.gameView!.showsStatistics = true
-        
-        // configure the view
-        self.gameView!.backgroundColor = NSColor.blackColor()
-
-        if (true) {
-            var stlFileNode = SceneLoaderFromStl.loadSceneFromStl ( "Contents/Resources/art.scnassets/CF-TypeI.stl" );
-
-            if ( stlFileNode != nil ) {
-                println ( "Got the scene node, and adding it to view " );
-                stlFileNode?.name = "CF-Card";
-            }
-
-            scene.rootNode.addChildNode ( stlFileNode! );
-        }
-
-        if (true) {
-            var stlFileNode = SceneLoaderFromStl.loadSceneFromStl ( "Contents/Resources/art.scnassets/jaws.stl" );
+        if ( stlFileNode != nil ) {
+            // unload the existing open object, if any
+            scene.rootNode.childNodeWithName ( LOADED_OBJECT_NAME , recursively: true )?.removeFromParentNode();
             
-            if ( stlFileNode != nil ) {
-                println ( "Got the scene node, and adding it to view " );
-                stlFileNode?.name = "jaws";
+            stlFileNode?.name = LOADED_OBJECT_NAME;
+            scene.rootNode.addChildNode ( stlFileNode! );
+            
+            var fileName: String = fromStl.absoluteString!;
+            
+            if ( fileName.lowercaseString.hasPrefix( FILE_PROTOCOL_PREFIX ) ) {
+                fileName = fileName.substringFromIndex( FILE_PROTOCOL_PREFIX.endIndex );
             }
             
-            scene.rootNode.addChildNode ( stlFileNode! );
+            self.view.window?.title = PROJECT_NAME + " - " + fileName;
         }
     }
     
-    //Lets one choose a file to send to the STL parser
-    @IBAction func fileOpen(sender: AnyObject) {
-        let myFiledialog:NSOpenPanel = NSOpenPanel()
-        myFiledialog.allowsMultipleSelection = false
-        myFiledialog.canChooseDirectories = false
-        myFiledialog.runModal()
-        
-        var chosenfile = myFiledialog.URL // holds path to selected file, if there is one
-        println(chosenfile?.path)
-        var fileString = String(contentsOfURL: chosenfile!)
-        filePath.placeholderString=chosenfile?.path;
-
+    func closeOpenFile () {
+        // unload the existing open object, if any
+        scene.rootNode.childNodeWithName ( LOADED_OBJECT_NAME , recursively: true )?.removeFromParentNode();
+        self.view.window?.title = PROJECT_NAME;
     }
-                @IBOutlet weak var filePath: NSTextField!
+    
+    
+    //Lets one choose a file to send to the STL parser
+    @IBAction func fileOpen ( sender: AnyObject ) {
+        
+        let stlFileDialog: NSOpenPanel = NSOpenPanel();
+        stlFileDialog.allowsMultipleSelection = false;
+        stlFileDialog.canChooseDirectories = false;
+        stlFileDialog.canChooseFiles = true;
+        stlFileDialog.resolvesAliases = true;
+        stlFileDialog.allowedFileTypes = [ "stl" ];
+        stlFileDialog.title = "Choose STL File";
+        
+        let userAction: Int = stlFileDialog.runModal();
+        
+        if ( userAction == NSFileHandlingPanelOKButton ) {
+            loadFile(fromStl: stlFileDialog.URL!);
+        }
+    }
 
+//    @IBOutlet weak var filePath: NSTextField!
+
+    @IBAction func fileClose ( sender: AnyObject ) {
+        closeOpenFile();    
+    }
 }
